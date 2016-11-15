@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<style type="text/css">
+	*{margin: 0;padding: 0;}
+#page{width: 100%;background-color: #ffd82b;height: 100%;color: #333;font-size: 0.390625rem;padding-top: 0.015625rem;}
+.main{width: 6.46875rem;height: 6.125rem;margin: 3.59375rem auto;}
+.main>img{width: 6.46875rem;height: 3.40625rem;}
+.main p{width: 1.203125rem;height: 1.734375rem;display: flex;margin: 1.5625rem auto;flex-wrap: wrap;}
+.main p>img{width: 1.203125rem;height: 1.203125rem;animation:play 3s linear infinite alternate;opacity: 0.3;}
+@keyframes play{
+	100%{opacity: 0.8;}
+}
+</style>
+<script src="../js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/start.js" type="text/javascript" charset="utf-8"></script>
+  <title>无标题</title>
+</head>
+<body>
+	<div id="page">
+		<div class="main">
+			<img src="../img/13_03.png">
+			<p>
+				<img src="../img/13_07.png">
+				<span>定位中</span>
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+   document.documentElement.style.fontSize=innerWidth/10+"px";
+	window.onresize=function(){
+		document.documentElement.style.fontSize=innerWidth/10+"px";
+	}
+	setTimeout(function(){
+		window.location.href="index.html";
+	},5000)
+</script>
+</html>

@@ -1,0 +1,27 @@
+.order .top{width: 100%;height: 1.421875rem;background-color: #f9fafd;line-height: 1.421875rem;text-align: center;border-bottom: 1px solid #e0e0e0;font-size: 0.40625rem;font-weight: bold;color: #000;}
+.order .nav{width: 100%;background-color: #fff;position: relative;border-top: 1px solid #a2a2a2;border-bottom: 1px solid #a0a0a0;margin-bottom: 0.3125rem;color: #898989;font-size: 0.34375rem;}
+.order .nav p{width: 100%;height: 1.046875rem;line-height: 1.046875rem;display: flex;border-bottom: 2px solid #d2d2d2;flex-wrap: wrap;}
+.order .nav p span{display: inline-block;text-align: center;width: 20%;height: 1.046875rem;}
+.order .nav p:first-of-type span:first-of-type{font-weight: bold;}
+.order .nav p:last-of-type{border: none;}
+.order .nav b{width: 1.640625rem;height: 0.03125rem;background-color: #000;display: inline-block;position: absolute;top: 1.046875rem;left: 0.1875rem;}
+
+.order .tip{width: 100%;height: 0.921875rem;line-height: 0.921875rem;border-bottom: 2px solid #ccc;border-top: 1px solid #a0a0a0;font-size: 0.375rem;border-bottom: 2px solid #ccc;background-color: #fff;}
+.order .tip p{display: flex;width: 100%;color: #929292;}
+.order .tip p span:first-of-type{width: 0.15625rem;height: 0.390625rem;display: inline-block;background-color:#2eaffd; margin: 0.3125rem 0.3125rem 0 0.265625rem;}
+.order .containt{width: 100%;background-color: #fff;}
+.order .containt dl{width: 100%;height: 3.5rem;border-bottom: 2px solid #ccc;position: relative;}
+.order .containt dl dt img{width: 3.40625rem;height: 2.671875rem;}
+.order .containt dl dt{float: left;width: 3.40625rem;height: 2.671875rem;margin: 0.390625rem 0.5rem 0 0.84375rem;}
+.order .containt dl dd{float: left;font-size: 0.390625rem;width: 4.25rem;line-height: 0.625rem;}
+.order .containt dl dd:first-of-type{margin-top: 0.265625rem;}
+.order .containt dl dd:nth-of-type(2){margin-top: 0.71875rem;}
+.order .containt dl dd:nth-of-type(2) span:first-of-type{font-size: 0.234375rem;color: #f1361d;}
+.order .containt dl dd:nth-of-type(2) span:nth-of-type(2){font-size: 0.40625rem;color: #f1361d;font-weight: bold;}
+.order .containt dl dd:nth-of-type(2) span:nth-of-type(3){
+	text-decoration: line-through;
+	color: #ccc;
+}
+.order .containt dl dd:last-of-type{position: absolute;right: 0.625rem;bottom: 0.5rem;width: 1.09375rem;height: 1.09375rem;}
+.order .containt dl dd img{width: 1.09375rem;height: 1.09375rem;}
+

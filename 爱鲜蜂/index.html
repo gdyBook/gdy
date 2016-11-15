@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>爱鲜蜂</title>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <div id="page">
+			
+  </div>
+  <div class="footer">
+    <ul>
+				<li><a href="#home">首页</a></li>
+				<li><a href="#shop">闪送超市</a></li>
+				<li><a href="#order">新鲜预定</a></li>
+				<li>
+					<a href="#cart">购物车</a>
+					<span>0</span>
+				</li>
+				<li><a href="#mine">我的</a></li>
+		</ul>
+  </div>
+  <script src="lib/zepto.js"></script>
+  <script src="lib/touch.js"></script>
+  <script src="lib/require.js" data-main='main'></script>
+  <script src="lib/jquery-v3.1.js"></script>
+  
+  <script>
+  	document.documentElement.style.fontSize=innerWidth/10+"px";
+		window.onresize=function(){
+			document.documentElement.style.fontSize=innerWidth/10+"px";
+		}
+		/*footer动画*/
+		$(".footer ul li").eq(0).click(function(){
+			resetFooter();
+			$(this).css("background","url(images/footer_3.jpg) no-repeat 0.671875rem 0.234375rem");
+			$(this).css("background-size","0.625rem 0.625rem");
+			$(this).addClass('anmClass');
+			this.addEventListener('animationend',function(){
+					this.classList.remove('anmClass');
+			})
+		})
+		function resetFooter(){
+			$(".footer ul li").eq(0).css("background","url(images/footer_1.png) no-repeat 0.671875rem 0.234375rem");
+			$(".footer ul li").eq(0).css("background-size","0.625rem 0.625rem");
+			$(".footer ul li").eq(1).css("background","url(images/footer_4.jpg) no-repeat 0.671875rem 0.234375rem");
+			$(".footer ul li").eq(1).css("background-size","0.625rem 0.625rem");
+			$(".footer ul li").eq(2).css("background","url(images/footer_1.jpg) no-repeat 0.671875rem 0.234375rem");
+			$(".footer ul li").eq(2).css("background-size","0.625rem 0.625rem");
+			$(".footer ul li").eq(3).css("background","url(images/footer_2.jpg) no-repeat 0.671875rem 0.234375rem");
+			$(".footer ul li").eq(3).css("background-size","0.625rem 0.625rem");
+			$(".footer ul li").eq(4).css("background","url(images/footer_5.png) no-repeat 0.671875rem 0.234375rem");
+			$(".footer ul li").eq(4).css("background-size","0.625rem 0.625rem");
+		}
+			$(".footer ul li").eq(1).click(function(){
+			resetFooter();
+			$(this).css("background","url(images/give_footer.jpg) no-repeat 0.671875rem 0.234375rem");
+			$(this).css("background-size","0.625rem 0.625rem");
+			$(this).addClass('anmClass');
+			this.addEventListener('animationend',function(){
+					this.classList.remove('anmClass');
+			})
+			$(".footer ul li:nth-of-type(4) span").show();
+		})
+			$(".footer ul li").eq(2).click(function(){
+			resetFooter();
+			$(this).css("background","url(images/order.png) no-repeat 0.671875rem 0.234375rem");
+			$(this).css("background-size","0.625rem 0.625rem");
+			$(this).addClass('anmClass');
+			this.addEventListener('animationend',function(){
+					this.classList.remove('anmClass');
+			})
+			$(".footer ul li:nth-of-type(4) span").show();
+		})
+			$(".footer ul li").eq(3).click(function(){
+			resetFooter();
+			$(this).css("background","url(images/f_s4.png) no-repeat 0.671875rem 0.234375rem");
+			$(this).css("background-size","0.625rem 0.625rem");
+			$(this).addClass('anmClass');
+			this.addEventListener('animationend',function(){
+					this.classList.remove('anmClass');
+			})
+			$(".footer ul li:nth-of-type(4) span").show();
+		})
+				$(".footer ul li").eq(4).click(function(){
+			resetFooter();
+			$(this).css("background","url(images/f_s5.png) no-repeat 0.671875rem 0.234375rem");
+			$(this).css("background-size","0.625rem 0.625rem");
+			$(this).addClass('anmClass');
+			this.addEventListener('animationend',function(){
+					this.classList.remove('anmClass');
+			})
+			$(".footer ul li:nth-of-type(4) span").show();
+		})
+  </script>
+</body>
+</html>

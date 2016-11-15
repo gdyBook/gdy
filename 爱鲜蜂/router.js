@@ -1,0 +1,79 @@
+define(['backbone'],function(){
+	var Router = Backbone.Router.extend({
+		routes:{
+			"home":"homeFn",
+			"shop":"shopFn",
+			"order":"orderFn",
+			"cart":"cartFn",
+			"mine":"mineFn",
+			"history":"historyFn",
+			"crazy":"crazyFn",
+			"integral":"integralFn",
+			"orderForm":"orderFormFn",
+			"search":"searchFn",
+			"*actions":"defaultAction"
+		},
+		homeFn:function(){
+			require(['./modules/home/home.js'],function(home){
+				home.render();
+				home.carousal();
+				home.getData();
+				
+			})
+		},
+		shopFn:function(){
+			require(['./modules/shop/shop.js'],function(shop){
+				shop.render();
+				
+			})
+		},
+		orderFn:function(){
+			require(['./modules/order/order.js'],function(order){
+				order.render();
+				order.getData();
+			})
+		},
+		cartFn:function(){
+			require(['./modules/cart/cart.js'],function(cart){
+				cart.render();
+				cart.func();
+				cart.addDl();
+				cart.del();
+			})
+		},
+		mineFn:function(){
+			require(['./modules/mine/mine.js'],function(mine){
+				mine.render();
+			})
+		},
+		historyFn:function(){
+			require(['./modules/history/search2.js'],function(search2){
+				search2.render();
+			})
+		},
+		crazyFn:function(){
+			require(['./modules/seckill/crazy.js'],function(crazy){
+				crazy.render();
+			})
+		},
+		integralFn:function(){
+			require(['./modules/integral/integral.js'],function(integral){
+				integral.render();
+			})
+		},
+		orderFormFn:function(){
+			require(['./modules/ordeform/orderForm.js'],function(orderForm){
+				orderForm.render();
+			})
+		},
+		searchFn:function(){
+			require(['./modules/search/search.js'],function(search){
+				search.render();
+			})
+		},
+		defaultAction:function(){
+			location.hash = 'home'; 
+		}
+	});
+	var router = new Router();  
+})
